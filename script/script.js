@@ -17,7 +17,7 @@ angular.module('mainApp', []).controller('mainCtrl', function($scope) {
             return (product.price <= $scope.maximumPrice);
     }
 
-    //Ascending / Descending order by title.
+    //Ascending / Descending order by title or price.
     $scope.orderBy = function(x) {
         if ($scope.myOrderBy === x)
             $scope.myOrderBy = '-' + x;

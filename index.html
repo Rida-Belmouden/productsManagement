@@ -8,17 +8,17 @@
 <body>
     <!-- Start Main -->
     <div class="main" data-ng-app="mainApp" data-ng-controller="mainCtrl">
-        
+
         <div class="filter">
-            <input type="text" id="productTitle" data-ng-model="productTitle" placeholder="Product title" value="" />
-            <input type="number" id="maximumPrice"  data-ng-model="maximumPrice" placeholder="Maximum price" value="" />
+            <input type="text" id="productTitle" data-ng-model="productTitle" placeholder="Product title" />
+            <input type="number" id="maximumPrice"  data-ng-model="maximumPrice" placeholder="Maximum price" />
         </div>
 
         <table>
             <thead>
                 <tr>
-                    <th data-ng-click="orderBy('productTitle')">Title</th>
-                    <th>Price</th>
+                    <th data-ng-click="orderBy('title')">Title</th>
+                    <th data-ng-click="orderBy('price')">Price</th>
                 </tr>
             </thead>
             <tbody>
@@ -28,6 +28,7 @@
                 </tr>
             </tbody>
         </table>
+
     </div>
 	<!-- End Main -->
 	<script src="data/products.js"></script>
